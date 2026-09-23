@@ -1,0 +1,29 @@
+{
+  "name": "tradingview-mcp",
+  "version": "1.0.0",
+  "description": "Unofficial free MCP server for TradingView market data (quotes, historical OHLC, indicators)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "tradingview-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "@types/ws": "^8.5.12",
+    "typescript": "^5.5.4"
+  }
+}
